@@ -10,4 +10,12 @@ class MainWindow(QWidget):
         super().__init__()
         self.profile = get_profile()
 
+    def initialize_ui(self):
+        self.setWindowTitle("User Profile")
+        self.setGeometry(100, 100, 500, 400)
+        self.show()
+
+
+
+
 
