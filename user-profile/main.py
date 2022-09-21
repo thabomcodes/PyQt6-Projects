@@ -1,8 +1,7 @@
 import sys
 from UserProfile import get_profile
-from PyQt6.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout
+from PyQt6.QtWidgets import QWidget, QApplication, QLabel
 from PyQt6.QtGui import QFont, QPixmap
-from PyQt6.QtCore import Qt
 from PIL.ImageQt import ImageQt
 
 
@@ -15,7 +14,7 @@ class MainWindow(QWidget):
 
     def initialize_ui(self):
         self.setWindowTitle("User Profile")
-        self.setGeometry(0, 0, 500, 500)
+        self.setFixedSize(500, 550)
         self.add_widgets()
         self.show()
 
@@ -53,8 +52,28 @@ class MainWindow(QWidget):
 
         skills_label = QLabel(self)
         skills_label.setText(self.profile.skills)
-        skills_label.move(50, 360)
+        skills_label.move(50, 365)
 
+        experience_header = QLabel(self)
+        experience_header.setText("Experience")
+        experience_header.setFont(QFont("Arial", 16))
+        experience_header.move(0, 390)
+
+        title1 = QLabel(self)
+        title1.setText(self.profile.experience[0][0])
+        title1.move(50, 420)
+
+        description1 = QLabel(self)
+        description1.setText("- " + self.profile.experience[0][1])
+        description1.move(75, 440)
+
+        title2 = QLabel(self)
+        title2.setText(self.profile.experience[1][0])
+        title2.move(50, 460)
+
+        description2 = QLabel(self)
+        description2.setText("- " + self.profile.experience[1][1])
+        description2.move(75, 480)
 
 
 if __name__ == "__main__":
