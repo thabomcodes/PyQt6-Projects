@@ -15,7 +15,7 @@ class MainWindow(QWidget):
 
     def initialize_ui(self):
         self.setWindowTitle("User Profile")
-        self.setGeometry(100, 100, 500, 500)
+        self.setGeometry(0, 0, 500, 500)
         self.add_widgets()
         self.show()
 
@@ -35,6 +35,17 @@ class MainWindow(QWidget):
         profile_image_pixmap.convertFromImage(profile_image)
         profile_image_label.setPixmap(profile_image_pixmap.scaled(250, 250))
         profile_image_label.move(125, 0)
+
+        bio_header = QLabel(self)
+        bio_header.setText("Biography")
+        bio_header.setFont(QFont("Arial", 16))
+        bio_header.move(0, 255)
+
+        bio_label = QLabel(self)
+        bio_label.setText(self.profile.biography)
+        bio_label.setWordWrap(True)
+        bio_label.move(50, 280)
+
 
 
 if __name__ == "__main__":
