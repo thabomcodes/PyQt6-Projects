@@ -46,6 +46,15 @@ class MainWindow(QWidget):
         bio_label.setWordWrap(True)
         bio_label.move(50, 280)
 
+        skills_header = QLabel(self)
+        skills_header.setText("Skills")
+        skills_header.setFont(QFont("Arial", 16))
+        skills_header.move(0, 340)
+
+        skills_label = QLabel(self)
+        skills_label.setText(self.profile.skills)
+        skills_label.move(50, 360)
+
 
 
 if __name__ == "__main__":
