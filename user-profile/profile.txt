@@ -1,0 +1,6 @@
+Name: David Johnson
+Image: images/david.jpg
+Biography:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc eros, faucibus non porta nec, interdum non mauris. Phasellus posuere, mi quis faucibus elementum, tellus sem placerat neque, non consequat massa ligula vel tortor.
+Skills: Python | C# | Java | C | C++
+Experience1: Software Engineer - Sed ultricies, dolor eu mattis molestie, felis libero vulputate diam, quis ultricies nulla massa in diam.
+Experience2: Systems Anaylist - Sed odio lorem, commodo ut dictum in, ullamcorper sit amet metus. Donec metus ipsum, fermentum ac ultricies ac, ultricies a diam.
